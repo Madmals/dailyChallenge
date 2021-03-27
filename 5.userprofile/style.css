@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    /* background-image: linear-gradient(90deg, #7d5fff, #7158e2); */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: url("https://images.pexels.com/photos/1838609/pexels-photo-1838609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px) grayscale(0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    margin: 20px;
+}
+
+.user-img{
+    height: 300px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+}
+
+.user-img::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /* filter: grayscale(10); */
+    background-color: rgba(0,0,0,0.8);
+    background: url("https://images.pexels.com/photos/1838609/pexels-photo-1838609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+
+.user-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -2; */
+    /* filter: grayscale(10); */
+    background-color: rgba(0,0,0,0.5);
+}
+
+.user-img .second{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    z-index: 100;
+
+}
+
+.name,.detail{
+    color: white;
+    z-index: 200;
+}
+
+.follow{
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 190px;
+}
+
+.number-container{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+

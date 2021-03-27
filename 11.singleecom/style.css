@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    /* background-image: linear-gradient(90deg, #7d5fff, #7158e2); */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.sofa{
+    width:300px;
+    height: 300px;
+    background: url('./Fluffy-Sofa-Bed-grey01.jpg');
+    background-position: center;
+    background-size: 100% auto;
+    /* this is to keep aspect ratio when resizing  */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.sofa svg{
+    mix-blend-mode: multiply;
+}
+
+label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.right-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+
+.right-container h1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.right-container small{
+    font-size: 20px;
+}
+
+.right-container .des{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 10px;
+}
+
+.des-box{
+    display: flex;
+    align-items: center;
+}
+
+.des p {
+
+height: 100px;
+}
+
+.des-box h3{
+    padding-left: 20px;
+}
+
+.fa-plus{
+    position: absolute;
+}
+
+.fa-minus{
+    position: absolute;
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.left-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 227, 227);
+}
+
+
+
+.label-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+
+}
+
+label.red{
+    background-color: red;
+}
+
+
+label.green{
+    background-color: green;
+}
+
+.description{
+    overflow: scroll;
+}
+
+
+label.blue{
+    background-color:blue;
+}
+
+/* .cls-1{
+    fill: red;
+} */
+
+#red-radio:checked ~ .sofa .cls-1{
+    fill: red;
+}
+
+
+#blue-radio:checked ~ .sofa .cls-1{
+    fill: blue;
+}
+
+#green-radio:checked ~ .sofa .cls-1{
+    fill: green;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity input{
+    width: 10%;
+    height: 100%;
+}
+
+.quantity button{
+    width: 15%;
+    height: 100%;
+    background-color: whitesmoke;
+    border: transparent;
+    
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-cart{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(118, 170, 230);
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+
+
+
+

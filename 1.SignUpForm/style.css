@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    /* background-image: linear-gradient(90deg, #7d5fff, #7158e2); */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #193f58;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.slider-container{
+    width: 400px;
+    height:300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    /* width: 20%; */
+    transition: 2s;
+}
+
+.slide img{
+    width: 400px;
+    height: 300px;
+    /* background-color: #6096ba; */
+}
+
+.manual-navigation{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    bottom: 0;
+
+
+}
+
+.manual-btn{
+    border: 1.2px solid #6096ba;
+    padding: 4px ;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: #6096ba;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+    
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    /* background-color: aliceblue; */
+}
+
+.navigation-auto div{
+    border: solid 1px #6096ba;
+    padding: 4px;
+    border-radius: 9px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .auto-btn1{
+    background-color: #6096ba;
+}
+
+#radio2:checked ~ .auto-btn2{
+    background-color: #6096ba;
+}
+
+#radio3:checked ~ .auto-btn3{
+    background-color: #6096ba;
+}
+
+
+
+.container{
+    display: flex;
+}
+
+.left-container{
+    flex: 1;
+    height: 100vh;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163, 235, 211);
+}
+
+.fa-mug-hot{
+    color: white;
+    height: 20px;
+}
+
+.texth1{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+.right-container{
+    background-color: #193f58;
+    position: relative;
+    flex: 1;
+    margin: 40px;
+    height: 100vh;
+}
+
+.upbutton-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.signup-left{
+    background-color: #5d8fb1;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    height: 30px;
+    border: none;
+}
+
+.signup-left a{
+    text-decoration: none;
+    font-size: 12px;
+    color: beige;
+    padding: 3px;
+}
+
+
+.signup-right{
+
+    background-color: rgb(163, 235, 211);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    border: none;
+}
+
+.signup-right a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #5d8fb1;
+    padding: 3px;
+}
+
+.h1texts{
+    text-align: center;
+    display: flex;
+    margin: 50px 10px auto;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.in-sign{
+    color: rgb(136, 132, 132);
+    font-size: 20px;
+
+}
+
+span{
+
+    color: rgb(136, 132, 132);
+}
+
+.up-sign{
+    color: #606364;
+    font-size: 20px;
+    border-bottom-width:1px ;
+    padding-bottom:5px ;
+    border-bottom-style:solid;
+    border-color: aqua;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #606364;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #606364;
+}
+
+
+.tnc{
+    display: flex;
+    margin: 20px 0px 20px;
+}
+
+.tnc span{
+    margin-left: 10px;
+}
+
+.sub{
+    background-color: aquamarine;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 1px;
+    padding-bottom: 2px;
+}

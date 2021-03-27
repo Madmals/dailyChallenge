@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=DotGothic16');
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'DotGothic16', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: black;
+    width: 100vw;
+}
+
+body::before{
+    content: " ";
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3cpath d='M17.486265317931426 252.13097078636054L151.9863527588085 225.98680221055258 125.84218418300055 91.4867147696755-8.65790325787652 117.63088334548345z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M653.447%2c415.804C672.816%2c415.769%2c692.826%2c411.605%2c703.765%2c395.62C716.162%2c377.504%2c720.221%2c353.364%2c709.145%2c334.411C698.147%2c315.593%2c675.239%2c309.082%2c653.447%2c309.52C632.524%2c309.94%2c612.084%2c318.524%2c601.492%2c336.573C590.779%2c354.829%2c591.202%2c378.104%2c602.809%2c395.805C613.475%2c412.071%2c633.996%2c415.84%2c653.447%2c415.804' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M142.5805306864267 406.681799412645L26.066280758372557 473.95133297303437 209.85006424681612 523.1960493406991z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1001.7364139225169 123.14260257782331L1123.7327981377323 1.3785273462980854 978.8957473505792-40.15282865383216z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1144.864%2c536.859C1168.072%2c536.934%2c1184.852%2c517.888%2c1197.006%2c498.117C1209.973%2c477.024%2c1221.272%2c452.414%2c1210.474%2c430.133C1198.533%2c405.494%2c1172.243%2c390.761%2c1144.864%2c390.527C1117.082%2c390.289%2c1089.316%2c403.952%2c1077.278%2c428.992C1066.345%2c451.734%2c1079.903%2c476.4%2c1093.301%2c497.783C1105.573%2c517.37%2c1121.75%2c536.785%2c1144.864%2c536.859' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M421.3501270113717 124.26847006629421L465.37621697554124 37.8624033863 313.7540719734651 15.02630178004273z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+body::after{
+    content: " ";
+    opacity: 0.15;
+    position: absolute;
+    background: url('https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container h1{
+    color: whitesmoke;
+}
+
+.text-container p{
+    color: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center
+}
+
+
+.email-area{
+    position: relative;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgb(116, 114, 114);
+    border-radius: 15px;
+    opacity: 0.4;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+input::placeholder{
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+    color: antiquewhite; 
+    background: rgb(74, 170, 65);  
+    border-width: 2px;
+    border: transparent solid;
+    border-radius: 15px;
+    margin: 2.5px;
+    font-size: 10px;
+    
+}
+
+.fa-arrow-alt-circle-down{
+    color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+}
+
+
+
+
+

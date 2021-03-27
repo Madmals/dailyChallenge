@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+.container{
+    height: 100vh;
+    width: 80%;
+    background-color: rgb(63, 62, 61);
+}
+
+section{
+    text-align: center;
+}
+
+.setting{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px ;
+    font-weight: bold;
+}
+
+
+.sec-1 .text{
+    font-size: 8px;
+    text-align: start;
+    margin-left: 20px;
+    color: rgb(165, 164, 164);
+}
+
+.a-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.a-1 p{
+    font-size: 10px;
+}
+
+.a-1 button{
+    background-color: brown;
+    border: none;
+    border-radius: 20px;
+}
+
+.a-1 a{
+    color: wheat;
+    text-decoration: none;
+    padding: 5px ;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.a-1:focus{
+    outline: none;
+}
+
+
+.a-1 .fm{
+    background-color: rgb(109, 107, 105);
+}
+
+.a-1 .fm a{
+    color: rgb(51, 56, 54);
+}
+
+
+hr{
+    margin: 10px;
+}
+
+
+
+/* ------------------------------ toogle button ----------------------------- */
+
+.toggle{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(165, 158, 158);
+    border-radius: 3px;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color:rgb(238, 231, 231);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.circle.toggle-on{
+    transform: translateX(10px);
+}
+
+/* -------------------------- end of toggle button -------------------------- */

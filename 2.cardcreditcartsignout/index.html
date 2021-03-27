@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit card checkout</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container-card">
+        <div class="left-container">
+
+            <div class="logo">
+
+                <i class="fas fa-undo-alt"></i>
+                <i class="fab fa-cc-visa"></i>
+
+            </div>
+
+            <div class="total-left-card">
+                <h3>TOTAL</h3>
+                <h1>$2.178,00</h1>
+            </div>
+
+            <div class="name-left-card">
+                <h3>NAME</h3>
+                <h1>Carl Hauseer</h1>
+            </div>
+        </div>
+
+        <div class="right-container">
+
+            <div class="expir-right-card">
+                <label for="date">EXPIRATION</label>
+                <input type="date" name="date" id="dates" value="">
+                <p id="date"></p>
+
+            </div>
+            <div class="cardnumber-right-card">
+                <label for="cardno">CARD NUMBER</label>
+                <input type="text" name="cardno" id="cardno" placeholder="Card Number" value=''>
+            </div>
+
+            <div class="cvc-right-card">
+
+                <label for="cvc">CVC CODE</label>
+                
+                <div class="box-cvc">
+
+                    <input type="text" name="box" id="box" placeholder="5">
+                    <input type="text" name="box" id="box" placeholder="8">
+                    <input type="text" name="box" id="box" placeholder="6">
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

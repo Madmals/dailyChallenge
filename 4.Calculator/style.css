@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(92%2c 139%2c 187%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c345.178C63.636%2c337.778%2c112.08%2c291.544%2c170.579%2c265.426C242.126%2c233.482%2c340.935%2c241.153%2c382.19%2c174.54C423.01%2c108.63%2c397.676%2c18.632%2c367.706%2c-52.868C341.239%2c-116.009%2c280.463%2c-154.05%2c226.692%2c-196.429C182.204%2c-231.492%2c134.294%2c-257.22%2c81.709%2c-278.275C23.769%2c-301.474%2c-33.48%2c-331.857%2c-95.563%2c-325.459C-163.677%2c-318.44%2c-239.787%2c-297.772%2c-278.328%2c-241.173C-316.61%2c-184.953%2c-276.354%2c-108.386%2c-288.898%2c-41.537C-302.283%2c29.792%2c-372.14%2c91.379%2c-353.914%2c161.627C-335.632%2c232.09%2c-262.755%2c274.786%2c-198.133%2c308.301C-137.265%2c339.869%2c-68.108%2c353.098%2c0%2c345.178' fill='%23426f9e'%3e%3c/path%3e%3cpath d='M1440 1005.303C1540.063 1020.629 1643.814 1061.6390000000001 1737.058 1022.231 1834.749 980.944 1893.982 883.46 1946.4180000000001 791.273 2002.821 692.112 2075.256 583.532 2049.85 472.317 2024.578 361.685 1908.174 301.632 1818.638 231.90800000000002 1744.405 174.10000000000002 1658.98 143.421 1574.449 102.10700000000003 1470.217 51.16399999999999 1374.385-75.077 1264.079-39.13199999999995 1152.82-2.8769999999999527 1151.827 158.08999999999997 1092.725 259.085 1046.439 338.179 984.326 403.577 954.332 490.171 918.83 592.668 852.234 709.432 903.654 804.941 955.577 901.385 1093.5729999999999 901.06 1196.18 939.3910000000001 1276.6779999999999 969.462 1355.059 992.294 1440 1005.303' fill='%2383a7cb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.operation{
+    height: 40px;
+    background-color: rgb(134, 137, 170);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+
+.result{
+    height: 100px;
+    background-color: rgb(44, 44, 43);
+    color: whitesmoke;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keypad{
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.butn{
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+-webkit-box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+-moz-box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+
+}
+
+.butn-right{
+        height: 50px;
+    width: 50px;
+    background-color: rgb(56, 56, 59);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+-webkit-box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+-moz-box-shadow: -2px 0px 14px -4px rgba(0,0,0,0.55);
+}
+
+
+
+
+
+
+
