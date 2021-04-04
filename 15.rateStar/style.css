@@ -14,7 +14,70 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
 }
 
+.container{
+    background-color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    position: relative;
+}
 
+.cancel{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+
+.comment{
+    color: white;
+}
+
+.container h4{
+    color: white;
+}
+
+.star{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.background{
+    color: gold;
+    
+}
+
+.X{
+    display: none;
+}
+
+.but-cancel{
+    border: 1px solid rgb(173, 173, 233);
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.submit{
+        border: 1px solid rgb(173, 173, 233);
+    background-color: rgb(88, 88, 148);
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
