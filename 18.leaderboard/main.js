@@ -15,19 +15,72 @@ const trending = async () => {
 
     let res = await fetch(urls[0])
     let data = await res.json()
-    console.log(data)
+
+    each_genre_id = []
+
+    data.results.forEach(eachgenre => {
+        each_genre_id.push(eachgenre.genre_ids)
+    })
+
+
 
     show_movies(data.results)
     get_rating()
 
+    return each_genre_id
+
 }
 
-const tag = async ()=>{
+
+trending().then(each_genre_id => {
+    each_genre_id.forEach(eachothers => {
+
+        // console.log(eachothers.length)
+        console.log(eachothers)
+        let a = tag().then(data_genre => {
+
+
+
+            let abbb = []
+            data_genre.forEach(eachofgenre => {
+                // console.log(Object.values(eachofgenre)[0])
+                let test = Object.values(eachofgenre)
+                // console.log(test)
+
+
+
+
+                for (let i = 0; i < eachothers.length; i++) {
+                    for (let j = 0; j < test.length; j++) {
+                        if (eachothers[i] === test[j]) {
+                            abbb.push((test[1]))
+                        }
+
+                    }
+                }
+
+
+            })
+            console.log(abbb) 
+        })
+
+    })
+
+
+})
+
+
+
+const tag = async () => {
     let res = await fetch(urls[1])
     let data = await res.json()
+    let data_genre = data.genres
     // console.log(data.genres)
     show_tag(data.genres)
+    return data_genre
 }
+
+
 
 
 
@@ -83,16 +136,16 @@ const show_movies = (movie) => {
     })
 }
 
-const show_tag = async(tags)=>{
+const show_tag = async (tags) => {
     const tag = document.querySelectorAll(".btn")
-    tags.forEach(eachres=>{
-        console.log(eachres)
+    tags.forEach(eachres => {
+        // console.log(eachres)
     })
 
 
-    for (let i=0; i<=tag.length;i++){
-        tag[i].innerHTML = tags[i].name
-    }
+    // for (let i = 0; i <= tag.length; i++) {
+    //     tag[i].innerHTML = tags[i].name
+    // }
 }
 
 
@@ -105,32 +158,32 @@ const get_rating = () => {
 
 
 
-    vote_all.forEach(eachvote=>{
+    vote_all.forEach(eachvote => {
 
-    // // get percentage
-    const star_percentage = (Number(eachvote.textContent) / rating_total) * 100
+        // // get percentage
+        const star_percentage = (Number(eachvote.textContent) / rating_total) * 100
 
-    // //rounded to 10 decimal
-    const star_percentage_rounded = `${Math.round(star_percentage / 10) * 10}%`
+        // //rounded to 10 decimal
+        const star_percentage_rounded = `${Math.round(star_percentage / 10) * 10}%`
 
 
 
-    //set width of stars inner to percentage
+        //set width of stars inner to percentage
 
-    let a = document.querySelectorAll(".stars-inner")
+        let a = document.querySelectorAll(".stars-inner")
 
-    a.forEach((list) => {
-        list.style.width = star_percentage_rounded
-        // console.log(star_percentage_rounded)
-    })
+        a.forEach((list) => {
+            list.style.width = star_percentage_rounded
+            // console.log(star_percentage_rounded)
+        })
 
     })
 
 
 }
 
-const run = async()=>{
-    await Promise.all([trending(),tag()])
+const run = async () => {
+    await Promise.all([trending(), tag()])
 }
 
 
