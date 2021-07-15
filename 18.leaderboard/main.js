@@ -36,24 +36,27 @@ trending().then(each_genre_id => {
     each_genre_id.forEach(eachothers => {
 
         // console.log(eachothers.length)
-        console.log(eachothers)
-        let a = tag().then(data_genre => {
+        tag().then(data_genre => {
 
 
 
-            let abbb = []
+            var abbb = []
             data_genre.forEach(eachofgenre => {
                 // console.log(Object.values(eachofgenre)[0])
                 let test = Object.values(eachofgenre)
-                // console.log(test)
 
 
-
+//stuck here
 
                 for (let i = 0; i < eachothers.length; i++) {
                     for (let j = 0; j < test.length; j++) {
                         if (eachothers[i] === test[j]) {
-                            abbb.push((test[1]))
+                            abbb.push(('a'))
+                            console.log(abbb.length)
+                            // console.log(test[1])
+
+
+
                         }
 
                     }
@@ -61,13 +64,57 @@ trending().then(each_genre_id => {
 
 
             })
-            console.log(abbb) 
-        })
 
+            // const num = document.querySelector(".number")
+            // let tag = document.querySelectorAll('.tag')
+            // num.innerHTML = 0
+
+
+            // for (let i = 0; i < abbb.length; i++) {
+
+            //     let newtags = document.createElement('button')
+            //     newtags.innerHTML = 'dfdfas'
+            //     tag[i].append(newtags)
+
+            // }
+
+            // for(let i=0; i<abbb.length; i++) {
+            //     for(j=0; j<abbb[i].length; j++) {
+            //         console.log(abbb[i].length)
+            //     }
+            // }
+
+
+
+            // return abbb
+            console.log(abbb)
+        })
     })
 
 
 })
+
+
+let d = () => {
+    trending().then(abbb => {
+        const num = document.querySelector(".number")
+        console.log(num)
+        let tag = document.querySelectorAll('.tag')
+        num.innerHTML = 0
+
+
+        for (let i = 0; i < tag.length; i++) {
+
+            let newtags = document.createElement('button')
+            newtags.innerHTML = 'dfdfas'
+            tag[i].append(newtags)
+
+        }
+
+    })
+
+}
+
 
 
 
@@ -76,7 +123,6 @@ const tag = async () => {
     let data = await res.json()
     let data_genre = data.genres
     // console.log(data.genres)
-    show_tag(data.genres)
     return data_genre
 }
 
@@ -120,7 +166,6 @@ const show_movies = (movie) => {
 
 
                     <div class="tag">
-                        <button type="text" class="btn">Drama</button>
 
                     </div>
                     </div>
@@ -133,20 +178,56 @@ const show_movies = (movie) => {
 
         card_area.appendChild(card_movie)
 
+
     })
+    // show_tag()
 }
 
-const show_tag = async (tags) => {
-    const tag = document.querySelectorAll(".btn")
-    tags.forEach(eachres => {
-        // console.log(eachres)
-    })
 
 
-    // for (let i = 0; i <= tag.length; i++) {
-    //     tag[i].innerHTML = tags[i].name
-    // }
-}
+
+
+// const show_tag = () => {
+
+
+//     let tag = document.querySelectorAll('.tag')
+
+//     tag.forEach(eachtag => {
+
+//         let newtag = document.createElement('button')
+//         newtag.innerHTML = 'abu'
+//         eachtag.appendChild(newtag)
+
+
+
+
+
+//     })
+
+
+
+
+
+// oneoftag.forEach(each => {
+
+// })
+
+// <button type="text" class="btn">Drama</button>
+
+// for (let i = 0; i <= tag.length; i++) {
+// tag[i].innerHTML =
+// }
+
+
+
+// }
+
+
+
+
+
+
+
 
 
 
@@ -183,7 +264,7 @@ const get_rating = () => {
 }
 
 const run = async () => {
-    await Promise.all([trending(), tag()])
+    await Promise.all([trending(), tag(), d()])
 }
 
 
