@@ -23,8 +23,9 @@ add_task.addEventListener('click', (e) => {
 		let create_task_obj = {
 
 			task: header_input.value,
-			timer: main_time.textContent
+			timer: main_time.textContent,
 		}
+
 
 		tasks_obj.push(create_task_obj)
 

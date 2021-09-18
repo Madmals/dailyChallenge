@@ -18,6 +18,7 @@ aside {
 	padding: 6.7vh 2.73vw;
 }
 
+
 .aside__mid{
 	padding: 3.8vh 1vw 3.8vh 0;
 	width: 100%;
@@ -47,16 +48,37 @@ aside {
 	border: solid 5px black;
 	height:60vh;
 	margin-top:5vh;
+	background-color: antiquewhite;
+	max-width: 30vw;
 }
 
 .aside__list{
 	padding: 2vh 2vw;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content:center;
 	transition: background-color 1s ease-in;
 	font-size:3.4vh;
+	max-width:28vw;
+	padding: 5px;
+	flex-wrap: wrap;
 }
 
+.aside__list i{
+	max-width:8vw;
+	margin-right: 1vw;
+}
+
+.aside__eachlist{
+	display: flex;
+	flex: 1;
+}
+
+.aside__eachlist i{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 7vw;
+}
 .aside__list:hover{
 	background-color:aliceblue
 }
@@ -127,6 +149,7 @@ header{
 .fa-plus-circle{
 	font-size:5vh;
 	padding-left: 1vw;
+	cursor: pointer;
 }
 
 
@@ -157,7 +180,8 @@ header{
 
 
 .new_p{
-	line-height:4.2vh;
+	line-height:7vh;
 	padding: 5px;
+	max-height: 100%;
 }
 
