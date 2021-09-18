@@ -11,7 +11,7 @@ This will search song and post up your favourite song lyric search
 
 ## Live version 
 
-[Check this link for live version](https://loving-swartz-9de518.netlify.app/)
+[Check this link for live version](https://sleepy-kilby-1ea9e5.netlify.app/)
 
 ### Add to collection 
 
