@@ -57,7 +57,6 @@ add_btn.addEventListener('click', () => {
 			lyric_obj = JSON.parse(lyrics)
 		}
 
-		console.log(lyric_item)
 
 		let new_object_lyric = {
 
@@ -67,7 +66,6 @@ add_btn.addEventListener('click', () => {
 			lyric: lyric_item.textContent
 		}
 
-		console.log(new_object_lyric)
 
 		lyric_obj.push(new_object_lyric)
 
@@ -135,7 +133,6 @@ const del_lyric = document.querySelectorAll('.fa-minus-square')
 del_lyric.forEach((eachone, index) => {
 	eachone.addEventListener('click', () => {
 
-		console.log(index)
 
 		let lyrics = localStorage.getItem('lyric')
 

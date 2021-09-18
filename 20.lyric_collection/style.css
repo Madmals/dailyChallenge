@@ -50,6 +50,7 @@ aside {
 	margin-top:5vh;
 	background-color: antiquewhite;
 	max-width: 30vw;
+	overflow: scroll;
 }
 
 .aside__list{
